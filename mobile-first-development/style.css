@@ -24,15 +24,30 @@ h3 {
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 
 .item {
   flex: 1;
   margin: 10px;
+  background-color: pink;
 }
 
 .item-double {
   flex: 2;
+  background-color: yellow;
+}
+
+/* Media Queries */
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
